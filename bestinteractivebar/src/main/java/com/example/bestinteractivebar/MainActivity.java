@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_settings:
+            case R.id.action_share:
                 startActivity(new Intent(this, Main2Activity.class));
                 return true;
-            case R.id.toolbar_star:
+            case R.id.toolbar_search:
                 Toast.makeText(this, "star", Toast.LENGTH_SHORT).show();
                 return true;
             default:

@@ -2,12 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/toolbar_star"
-        android:icon="@android:drawable/btn_star"
-        android:title="@string/star"
-        app:showAsAction="always"/>
+        android:id="@+id/toolbar_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
 
-    <item android:id="@+id/action_settings"
-        android:title="@string/setting"
-        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_share"
+        android:title="@string/share"
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
 </menu>
